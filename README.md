@@ -9,13 +9,13 @@ Once installed, Claude Code can act as a principal engineer when integrating Olo
 **Personal** (all your projects):
 
 ```bash
-git clone https://github.com/olostep/olostep-claude-code-skill ~/.claude/skills/olostep
+git clone https://github.com/olostep-api/olostep-claude-code-skill ~/.claude/skills/olostep
 ```
 
 **Project-scoped** (shared with the repo):
 
 ```bash
-git clone https://github.com/olostep/olostep-claude-code-skill .claude/skills/olostep
+git clone https://github.com/olostep-api/olostep-claude-code-skill .claude/skills/olostep
 ```
 
 Claude Code auto-detects the skill — no restart needed.
