@@ -1,40 +1,41 @@
 # olostep-claude-code-skill
 
-A [Claude Code skill](https://code.claude.com/docs/en/skills) that gives Claude context about the [Olostep](https://www.olostep.com/) web scraping and data extraction API.
+A [Claude Code skill](https://code.claude.com/docs/en/skills) that gives Claude deep technical knowledge of the [Olostep](https://www.olostep.com/) web scraping and data extraction API.
 
-Once installed, Claude Code knows how to use every Olostep endpoint — Scrapes, Searches, Answers, Maps, Batches, Crawls, Files, and Schedules — without you needing to paste docs each time.
+Once installed, Claude Code can act as a principal engineer when integrating Olostep — it knows every endpoint schema, async orchestration flow, pagination paradigm, and edge case without you pasting docs.
 
 ## Install
 
-**Personal** (available in all your projects):
+**Personal** (all your projects):
 
 ```bash
-# Clone into your Claude Code skills directory
 git clone https://github.com/olostep/olostep-claude-code-skill ~/.claude/skills/olostep
 ```
 
-**Project-scoped** (shared with anyone using the repo):
+**Project-scoped** (shared with the repo):
 
 ```bash
-# From your project root
 git clone https://github.com/olostep/olostep-claude-code-skill .claude/skills/olostep
 ```
 
 Claude Code auto-detects the skill — no restart needed.
 
-## What's included
+## What's covered
 
-The `SKILL.md` covers:
+The `SKILL.md` is an exhaustive technical reference covering:
 
-- **Scrapes** — turn any URL into markdown, HTML, text, screenshots, or structured JSON
-- **Searches** — semantic web search with deduplicated results
-- **Answers** — AI-powered web research with structured JSON output and sources
-- **Maps** — get all URLs on a website with glob filtering and pagination
-- **Batches** — run many scrapes in parallel
-- **Crawls** — crawl websites following links
-- **Files** — upload context for scrapes and answers
-- **Schedules** — cron-based recurring jobs
-- **SDKs** — Python and Node.js usage
+- **Scrapes** — full request/response schema, actions, parsers, LLM extraction, screen sizes
+- **Answers** — AI agent with structured JSON output, `NOT_FOUND` handling, sources
+- **Batches** — step-by-step async orchestration: submit → poll → list items → retrieve
+- **Crawls** — step-by-step async orchestration: kickoff → poll → list pages → retrieve
+- **Maps** — domain URL discovery with glob filtering and cursor pagination
+- **Searches** — semantic web search with deduplication
+- **Retrieve** — shared content extraction endpoint for batches/crawls
+- **Files** — context upload lifecycle
+- **Schedules** — serverless cron for any endpoint
+- **Webhooks** — completion notifications with retry behavior
+- **Metadata** — key-value pairs with PATCH semantics
+- **SDKs** — Python (sync + async) and Node.js patterns
 
 ## Links
 
